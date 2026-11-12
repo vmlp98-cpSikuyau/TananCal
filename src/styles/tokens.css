@@ -1,0 +1,50 @@
+/* Brand: navy #0B1E36, tan #B8936A, cream #EFE3D3. Dark is the default theme. */
+:root,
+:root[data-theme='dark'] {
+  --navy: #0b1e36;
+  --tan: #b8936a;
+  --cream: #efe3d3;
+
+  --bg: #0b1e36;
+  --surface: #12294a;
+  --surface-2: #1a345a;
+  --border: #2b4670;
+  --text: #efe3d3;
+  --text-muted: #a9b4c4;
+  --accent: #b8936a;
+  --accent-strong: #d1ad84;
+  --on-accent: #0b1e36;
+  --danger: #ff8a80;
+  --danger-bg: rgba(255, 138, 128, 0.12);
+  --success: #8fd19e;
+  --focus: #f0cf9f;
+  --mono: #2f7de1;
+  --shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #f6efe4;
+  --surface: #ffffff;
+  --surface-2: #f1e8da;
+  --border: #d8c9b3;
+  --text: #0b1e36;
+  --text-muted: #4d5d73;
+  --accent: #8a6538;
+  --accent-strong: #6f4f2a;
+  --on-accent: #ffffff;
+  --danger: #b3261e;
+  --danger-bg: rgba(179, 38, 30, 0.08);
+  --success: #1d6b34;
+  --focus: #0b1e36;
+  --mono: #2563c9;
+  --shadow: 0 8px 24px rgba(11, 30, 54, 0.14);
+  color-scheme: light;
+}
+
+:root {
+  --radius: 12px;
+  --radius-sm: 8px;
+  --topbar-h: 60px;
+  --font: 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
