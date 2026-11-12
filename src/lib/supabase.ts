@@ -5,7 +5,7 @@ function cleanUrl(v: string | undefined): string | undefined {
   if (!v) return v;
   try { return new URL(v.trim()).origin; } catch { return v; }
 }
-const url = cleanUrl(import.meta.env.VITE_SUPABASE_URL as string | undefined);
+const url = cleanUrl((import.meta.env.VITE_SUPABASE_URL || import.meta.env.VITE_DB_URL) as string | undefined);
 // VITE_SUPABASE_ANON is an alias for hosts (e.g. Vercel) that refuse public variable names containing "KEY".
 const key = (import.meta.env.VITE_SUPABASE_ANON_KEY || import.meta.env.VITE_SUPABASE_ANON) as string | undefined;
 
